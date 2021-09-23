@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "message": "Mon message personnalisé numéro 1 avec un peu plus de ligne et en plus modifié ici !"
+  },
+  {
+    "id": 2,
+    "message": "Message personnalisé 2 numéro 2 moins de ligne."
+  },
+  {
+    "id": 3,
+    "message": "Message personnalisé 3 numéro 3 extra large qui prends un peu beaucoup plus de ligne !"
+  },
+  {
+    "id": 4,
+    "message": "Extra short numéro 4"
+  },
+  {
+    "id": 5,
+    "message": "Message short short mais moins short."
+  },
+  {
+    "id": 6,
+    "message": "Message personnalisé 6 extra extra long pour qu'il fasse beaucoup de retour a la ligne on va voir ce que ça donne !"
+  }
+]

@@ -1,0 +1,67 @@
+.addbylogin-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    background-color: $primary-color;
+    border-radius: 17px;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+  
+    input {
+      background-color: $secondary-color;
+      color: $primary-color;
+      text-align: center;
+      height: 25px;
+      border-radius: 50px;
+      border: none;
+      width: 80%;
+      font-size: 1.4rem;
+      padding: 10px 10px 10px 20px;
+      margin: 20px 0px 10px 0px;
+  
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder{
+        color:$primary-color;
+      }
+    }
+  
+    .addbylogin-button-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+  
+      button {
+        text-align: center;
+        font-size: 1.2rem;
+        background-color: $accentuation-color;
+        width: 10rem;
+        height: 50px;
+        border-radius: 5000px;
+        border: none;
+        color: $secondary-color;
+        cursor: pointer;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 0px 20px 0px;
+  
+        &:hover {
+          transform:scale(1.1);
+        }
+  
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .addbylogin-infobox {
+    margin-bottom: 1rem;
+    font-style: italic;
+  }

@@ -1,0 +1,28 @@
+.HomeHeader-container {
+  position: relative;
+  background-color: $primary-color;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+.HomeHeader-right-logo {
+  position: absolute;
+  right: 1.5rem;
+  height: 80%;
+  cursor: pointer;
+  &:hover {
+    transform:scale(1.1);
+  }
+}
+
+.HomeHeader-left-logo {
+  position: absolute;
+  left: 1.5rem;
+  height: 80%;
+}

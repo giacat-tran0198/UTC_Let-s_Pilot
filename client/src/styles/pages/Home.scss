@@ -1,0 +1,60 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.home-meetingCard-meeting-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow: scroll;
+  flex-grow: 1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.home-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 3px solid $primary-color;
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  button {
+    border: none;
+    border-radius: 50px;
+    height: 3rem;
+    color: $primary-color;
+    background-color: $secondary-color;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    max-width: 37.5rem;
+    width: 90%;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary-color;
+      background-color: $primary-color;
+    }
+  }
+}

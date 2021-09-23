@@ -1,0 +1,39 @@
+.context-menu-backdrop {
+  z-index: 10;
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  top: 0;
+  left:0;
+  right:0;
+  bottom:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .context-menu-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 30rem;
+    background-color: $primary-color;
+    border-radius: 17px;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+
+    .context-menu-button {
+      font-size: 1.2rem;
+      background-color: transparent;
+      border: none;
+      color: $secondary-color;
+      height: 50px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+    }
+  }
+}

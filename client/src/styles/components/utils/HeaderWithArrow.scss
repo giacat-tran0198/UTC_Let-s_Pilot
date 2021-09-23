@@ -1,0 +1,23 @@
+.header-with-back-arrow {
+  position: relative;
+  background-color: $primary-color;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  p {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}

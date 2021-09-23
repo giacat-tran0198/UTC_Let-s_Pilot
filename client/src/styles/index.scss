@@ -1,0 +1,42 @@
+$breakpoint-tablet: 768px;
+$breakpoint-large-screen: 1024px;
+$primary-color: #4f6d7a;
+$secondary-color: #dbe9ee;
+$accentuation-color: #166088;
+$fourth-color: #c82c17;
+$background-color: #f8f9fa;
+$box-shadow: 0px 24px 48px 0 hsla(0, 0, 0, 0.15);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+  }  
+}
+
+body,
+#root {
+  background-color: $background-color;
+  font-family: 'Lato', sans-serif;
+  color: $secondary-color;
+}
+
+@import './components/utils/Banner.scss';
+@import './components/utils/HeaderWithArrow.scss';
+@import './pages/Chat.scss';
+@import './components/chat/AddParticipantPopUp.scss';
+@import './components/chat/ChatContextMenu.scss';
+@import './components/chat/ChatHeader.scss';
+@import './components/chat/MessageInput.scss';
+@import './components/chat/MessageList.scss';
+@import './components/chat/ParticipantList.scss';
+@import './pages/SignIn.scss';
+@import './pages/SignUp.scss';
+@import './pages/JoinMeeting.scss';
+@import './pages/Home.scss';
+@import './components/home/HomeHeader.scss';
+@import './components/home/MeetingElement.scss';
+@import './components/home/MeetingInfo.scss';
+@import './pages/MyAccount.scss'

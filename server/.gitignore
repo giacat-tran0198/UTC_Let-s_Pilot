@@ -1,0 +1,7 @@
+# Enviroment
+venv
+
+# Database
+migrations
+*.db
+!.env.db

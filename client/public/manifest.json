@@ -1,0 +1,53 @@
+{
+  "name": "Chat App",
+  "short_name": "Chat App",
+  "description":"A chat app to enhance your meeting",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#dbe9ee",
+  "background_color": "#4f6d7a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/image/logo72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/image/logo96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/image/logo128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/image/logo144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/image/logo152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/image/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/image/logo384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/image/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

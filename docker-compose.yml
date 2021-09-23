@@ -1,0 +1,32 @@
+version: '3'
+services:
+  server:
+    build: ./server
+    ports:
+      - 5000:5000
+    depends_on:
+      - redis
+      - db
+  redis:
+    build: ./redis
+    privileged: true
+    command: sh -c "./init.sh"
+    ports:
+      - 6379:6379
+    volumes:
+      - redis_data:/data:rw
+  db:
+    image: postgres:13-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - ./server/.env.db
+  client:
+    build: ./client
+    ports:
+      - 80:80
+      - 443:443
+
+volumes:
+  redis_data:
+  postgres_data:
